@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafePath</title>
-    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <main class="page">
-        <section class="hero-card">
-            <h1>SafePath</h1>
-            <p class="subtitle">
-                Compare safer and faster travel routes before you leave.
-            </p>
+    <h1>SafePath</h1>
+    <p>Compare safer and faster travel routes.</p>
 
-            <form action="/route" method="POST" class="route-form">
-                <label for="start_location">Starting Location</label>
-                <input 
-                    type="text" 
-                    id="start_location" 
-                    name="start_location" 
-                    placeholder="Example: Kennesaw State University"
-                    required
-                >
+    <form action="/route" method="POST">
+        <p>
+            <label>Starting Location:</label><br>
+            <input type="text" name="start_location" required>
+        </p>
 
-                <label for="destination">Destination</label>
-                <input 
-                    type="text" 
-                    id="destination" 
-                    name="destination" 
-                    placeholder="Example: Downtown Atlanta"
-                    required
-                >
+        <p>
+            <label>Destination:</label><br>
+            <input type="text" name="destination" required>
+        </p>
 
-                <button type="submit">Compare Routes</button>
-            </form>
-        </section>
-    </main>
+        <button type="submit">Compare Routes</button>
+    </form>
 </body>
 </html>
