@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePath</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="hero-card">
+            <h1>SafePath</h1>
+            <p class="subtitle">
+                Compare safer and faster travel routes before you leave.
+            </p>
+
+            <form action="/route" method="POST" class="route-form">
+                <label for="start_location">Starting Location</label>
+                <input 
+                    type="text" 
+                    id="start_location" 
+                    name="start_location" 
+                    placeholder="Example: Kennesaw State University"
+                    required
+                >
+
+                <label for="destination">Destination</label>
+                <input 
+                    type="text" 
+                    id="destination" 
+                    name="destination" 
+                    placeholder="Example: Downtown Atlanta"
+                    required
+                >
+
+                <button type="submit">Compare Routes</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
