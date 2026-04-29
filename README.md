@@ -1,2 +1,2 @@
 # SafePath
-A Python safety navigation app for evaluating safer travel routes.
+A Python navigation app that helps users compare safer and faster travel routes using location and route information.
